@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperacion de contraseña</title>
+    <link rel="stylesheet"  href="../CSS/Recuperacion.css">
+</head>
+<body>
+        <div class="formulario">
+        <div class="logo">
+            
+            <div class="tit">
+                <h2>Restablecer su acceso</h2>
+            </div>
+        </div>
+        <br> 
+      <div class="seccion_btn">
+    <button class="btn" id="emailOption">
+        <span class="icon">📧</span>
+        <span class="text">Recuperar por email</span>
+        <span class="arrow">›</span>
+    </button>
+    <button class="btn" id="prgOption">
+        <span class="icon">📄​</span>
+        <span class="text">Preguntas de Seguridad</span>
+        <span class="arrow">›</span>
+    </button>
+</div>
+
+        
+    </div>
+    <script>
+        document.getElementById('emailOption').addEventListener('click', function() {
+            const form = document.getElementById('recoveryForm');
+            if (form.style.display === 'none' || !form.style.display) {
+                form.style.display = 'block';
+                this.innerHTML = 'Recuperar por correo electrónico <span>⌄</span>';
+            } else {
+                form.style.display = 'none';
+                this.innerHTML = 'Recuperar por correo electrónico <span>›</span>';
+            }
+        });
+    </script>
+</body>
+</html>

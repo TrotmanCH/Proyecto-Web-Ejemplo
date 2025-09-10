@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+  
+    background-image: url('../Resources/Img/img2.jpg');
+    background-size: cover;            
+    background-position: center;       
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+.logo{
+    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.tit h2{
+    color: #2e2e2d;
+}
+.formulario{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 490px;
+background: white;
+border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.formulario h1{
+text-align: center;
+padding: 0 0 20px 0;
+border-bottom: 1px silver;
+
+}
+
+.formulario form{
+padding: 0 40px;
+box-sizing: border-box;
+
+}
+.seccion_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background: #f8f9fa;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn:hover {
+    background: #e8e8e8;
+    border-color: #a2a6ac;
+}
+
+.btn:active {
+    background: #dde0e3;
+    transform: scale(0.98);
+}
+
+.btn .icon {
+    font-size: 20px;
+}
+
+.btn .text {
+    flex-grow: 1;
+    color: #0f1111;
+}
+
+.btn .arrow {
+    font-size: 24px;
+    color: #565959;
+}
